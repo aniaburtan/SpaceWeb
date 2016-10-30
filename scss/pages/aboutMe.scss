@@ -1,0 +1,376 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+$mainColor: #3c0256;
+
+main {
+    background-color: white;
+}
+
+header {
+    position: relative;
+    float: left;
+}
+
+.navBox {
+    background-color: $mainColor;
+    height: 20%;
+    z-index: 2;
+}
+nav {
+    margin-right: 1em;
+}
+
+nav li {
+    display: inline-flex;
+    font-family: 'Roboto Condensed';
+    color: white;
+    padding: 0 1em 1em 1em;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+nav li a {
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: 2.5em;
+    display:block;
+    text-align:center;
+    padding-top: 3em; 
+    margin-top: 1em;
+    color: white;
+    align-items: stretch;
+    
+}
+
+.menuHome a {
+    background-image: url('../media/svg/home.svg');
+}
+
+.menuAboutMe a {
+    background-image: url('../media/svg/me.svg');
+}
+
+.menuBlog a {
+    background-image: url('../media/svg/planets.svg');
+}
+
+.menuContact a {
+    background-image: url('../media/svg/contact.svg');
+}
+#wrap {
+  margin-top: 1em;
+  display: block;
+  height: 2em;
+  float: right;
+  border: none;
+  padding: 1em;
+}
+
+.navIcons {
+    width: 2em;
+}
+
+.navIcons img {
+    margin: auto;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.navIcons div {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    float: left;
+}
+
+#main {
+    border: 2px solid blue;
+    height: 20vh;
+    width: 20vh;
+    color: red;
+}
+
+#sun {
+    position: absolute;
+    top: 30vh;
+    left: 30vh;
+    background:yellow;
+
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+
+    box-shadow: 0 0 40px red;
+}
+
+#skill1 {
+position: absolute;
+    top: 0;
+    left: 17.5vh;
+    background:#E34D26;
+    border-radius:50%;
+    height: 4vh;
+    width: 4vh;
+  
+}
+#skill1-orbit {
+    position: absolute;
+    left: 25vh;
+    top: 25vh;
+
+
+    width: 25vh;
+    height: 25vh;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius:50%;
+    
+    
+    -webkit-animation: spin-right 60s linear infinite;
+    -moz-animation: spin-right 60s linear infinite;
+    animation: spin-right 60s linear infinite;
+}
+
+#skill1-moon-orbit {
+position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 5vh;
+    height: 5vh;
+    margin-top:  -2.5vh;
+    margin-left: -2.5vh;
+
+    border-width: 0px;
+    border-style: solid;
+    border-color:transparent ;
+    border-radius:50%;
+    
+    
+    -webkit-animation: spin-right 2.5s linear infinite;
+    -moz-animation: spin-right 2.5s linear infinite;
+    animation: spin-right 2.5s linear infinite;
+}
+
+#skill1-moon{
+position: absolute;
+    top: 0;
+    left: 50%;
+    background:#b2beb5;
+    border-radius:50%;
+    height: 1vh;
+    width: 1vh;
+    margin-left: -1vh;
+    margin-top: -1vh;
+}
+#skill2 {
+position: absolute;
+    top: 0;
+    left: 50%;
+    background:#0170B9;
+    border-radius:50%;
+    height: 5vh;
+    width: 5vh;
+    margin-left: -2vh;
+    margin-top: -2vh;
+  
+}
+#skill2-orbit {
+position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 40vh;
+    height: 40vh;
+    margin-top: -20vh;
+    margin-left: -20vh;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius:50%;
+    
+    
+    -webkit-animation: spin-right 11s linear infinite;
+    -moz-animation: spin-right 11s linear infinite;
+    animation: spin-right 11s linear infinite;
+}
+
+#skill3 {
+position: absolute;
+    top: 0;
+    left: 50%;
+    background:#D5B932;
+    border-radius:50%;
+    height: 5vh;
+    width: 5vh;
+    margin-left: -2vh;
+    margin-top: -2vh;
+  
+}
+#skill3-orbit {
+position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 56vh;
+    height: 56vh;
+    margin-top: -28vh;
+    margin-left: -28vh;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius:50%;
+    
+    
+    -webkit-animation: spin-right 22s linear infinite;
+    -moz-animation: spin-right 22s linear infinite;
+    animation: spin-right 22s linear infinite;
+}
+
+
+#skill4 {
+position: absolute;
+    top: 0;
+    left: 50%;
+    background: #1CA48F;
+    border-radius:50%;
+    height: 3vh;
+    width: 3vh;
+    margin-left: -2vh;
+    margin-top: -2vh;
+  
+}
+#skill4-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 68vh;
+    height: 68vh;
+    margin-top: -34vh;
+    margin-left: -34vh;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius:50%;
+    
+    
+    -webkit-animation: spin-right 14s linear infinite;
+    -moz-animation: spin-right 14s linear infinite;
+    animation: spin-right 14s linear infinite;
+}
+
+
+@-webkit-keyframes spin-right {
+  100% {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-right {
+  100% { 
+      transform: rotate(-360deg);
+    }
+}
+
+.skills {
+    color: white;
+    float: left;
+    margin-top: 10vh;
+    width: 28vw;
+    height: 25vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    position: absolute;
+    z-index: 100;
+}
+
+#htmlLogo {
+    background-image: url('../media/svg/HTML5.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+}
+
+#htmlText {
+    width: 18vw;
+    height: 8vh;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 1em;
+}
+
+#cssLogo {
+    background-image: url('../media/svg/css.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+}
+
+#cssText {
+    width: 18vw;
+    height: 8vh;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 1em;
+}
+
+#javascriptLogo {
+    background-image: url('../media/svg/javascript.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+}
+
+#javascriptText {
+    width: 18vw;
+    height: 8vh;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 1em;
+}
+
+#rwdLogo {
+    background-image: url('../media/svg/rwd.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+}
+
+#rwdText {
+    width: 18vw;
+    height: 8vh;
+    margin-bottom: 1em;
+    float: left;
+    margin-left: 1em;
+}
