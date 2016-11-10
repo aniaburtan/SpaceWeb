@@ -1,13 +1,590 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
 $mainColor: #3c0256;
 
-main {
-    background-color: white;
+// Small screens
+@media only screen and (max-width: 40em) { 
+    
+  
+    .skills {
+    color: white;
+    float: right;
+    margin-top: 60vh;
+    width: 100vw;
+    height: 30vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    z-index: 100;
 }
+ 
+ main {
+    height: 130%;
+    width: 100%;
+    position: relative;
+    font-size: 0.8em;
+}     
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: -45vh;
+    height: 9vh;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+#htmlTab {
+    height: 10vh;
+    border-radius: 5%;
+    width: 100vw;
+}
+
+#css {
+    width: 100vw;
+}
+
+#javascript {
+    width: 100vw;
+}
+
+#rwd {
+    width: 100vw;
+}
+
+#cssLogo {
+    position: absolute;
+    left: 0;
+    margin-left: 2em;
+    top: 35em;
+}
+
+#htmlLogo {
+    position: absolute;
+    left: 0;
+    margin-left:2em;
+    top: 30em;
+}
+
+#javascriptLogo {
+    position: absolute;
+    left: 0;
+    margin-left:2em;
+    top: 39.5em;
+}
+
+#rwdLogo {
+    position: absolute;
+    left: 0;
+    margin-left:2em;
+    top: 44em;
+}
+
+#htmlText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 5em;
+    top: 31em;
+}
+
+#cssText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 5em;
+    top: 36em;
+}
+
+#javascriptText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 5em;
+    top: 40em;
+}
+
+#rwdText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 5em;
+    top: 44em;
+}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+    
+// Medium screens
+@media only screen and (min-width: 40.063em) { 
+    
+    .skills {
+    color: white;
+    float: right;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 25vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    z-index: 100;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    font-size: 0.8em;
+}
+
+#htmlText {
+    width: 60vw;
+    height: 4vh;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 3em;
+}
+
+#cssText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left:38em;
+    top: 6em;
+}
+
+#javascriptText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left:38em;
+    top: 10em;
+}
+
+#rwdText {
+    width: 60vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 38em;
+    top: 15em;
+}
+
+#htmlLogo {
+    background-image: url('../media/svg/HTML5.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 4em;
+}
+
+#cssLogo {
+    background-image: url('../media/svg/css.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 9em;
+}
+
+#javascriptLogo {
+    background-image: url('../media/svg/javascript.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 13em;
+}
+
+#rwdLogo {
+    background-image: url('../media/svg/rwd.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 16em;
+}
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    
+    .skills {
+    color: white;
+    float: right;
+    margin-right: 5vw;
+    margin-top: 10vh;
+    width: 40vw;
+    height: 25vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    z-index: 100;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    font-size: 0.8em;
+}
+
+#htmlText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 5em;
+}
+
+#cssText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 10em;
+}
+
+#javascriptText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 15em;
+}
+
+#rwdText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 20em;
+}
+
+#htmlLogo {
+    background-image: url('../media/svg/HTML5.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 4em;
+}
+
+#cssLogo {
+    background-image: url('../media/svg/css.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 9em;
+}
+
+#javascriptLogo {
+    background-image: url('../media/svg/javascript.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 13.5em;
+}
+
+#rwdLogo {
+    background-image: url('../media/svg/rwd.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 18em;
+}
+
+ } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+    
+    .skills {
+    color: white;
+    float: right;
+    margin-right: 30vw;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 25vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    z-index: 100;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    font-size: 0.8em;
+}
+
+#htmlText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 5em;
+}
+
+#cssText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 10em;
+}
+
+#javascriptText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 15em;
+}
+
+#rwdText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 20em;
+}
+
+#htmlLogo {
+    background-image: url('../media/svg/HTML5.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 4em;
+}
+
+#cssLogo {
+    background-image: url('../media/svg/css.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 9em;
+}
+
+#javascriptLogo {
+    background-image: url('../media/svg/javascript.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 13.5em;
+}
+
+#rwdLogo {
+    background-image: url('../media/svg/rwd.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 18em;
+}
+
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+    
+    .skills {
+    color: white;
+    float: right;
+    margin-right: 40vw;
+    margin-top: 10vh;
+    width: 30vw;
+    height: 25vw;
+    padding: 2vh;
+    font-family: 'Roboto Condensed';
+    z-index: 100;
+}
+
+main {
+    height: 80%;
+    width: 100%;
+    position: relative;
+    font-size: 0.8em;
+}
+
+#htmlLogo {
+    background-image: url('../media/svg/HTML5.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 4em;
+}
+
+#cssLogo {
+    background-image: url('../media/svg/css.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 9em;
+}
+
+#javascriptLogo {
+    background-image: url('../media/svg/javascript.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 13.5em;
+}
+
+#rwdLogo {
+    background-image: url('../media/svg/rwd.svg');
+    width: 7vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    position: absolute;
+    left: 33em;
+    top: 18em;
+}
+
+#htmlText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 5em;
+}
+
+#cssText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 10em;
+}
+
+#javascriptText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 15em;
+}
+
+#rwdText {
+    width: 20vw;
+    height: 4vh;
+    margin-bottom: 1em;
+    float: left;
+    position: absolute;
+    left: 37em;
+    top: 20em;
+}
+
+ } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
 
 header {
     position: relative;
     float: left;
+    margin-left: 0;
 }
 
 .navBox {
@@ -16,14 +593,15 @@ header {
     z-index: 2;
 }
 nav {
-    margin-right: 1em;
+    margin-right: 0.5em;
 }
 
 nav li {
     display: inline-flex;
     font-family: 'Roboto Condensed';
     color: white;
-    padding: 0 1em 1em 1em;
+    padding: 0 0.5em 1em 0.5em;
+    float: left;
 }
 
 nav li:hover {
@@ -83,13 +661,6 @@ nav li a {
     font-size: 0.8em;
 }
 
-main {
-    height: 80%;
-    width: 100%;
-    position: relative;
-    float: left;
-}
-
 #main {
     border: 2px solid blue;
     height: 20vh;
@@ -97,37 +668,46 @@ main {
     color: red;
 }
 
+#textArea {
+    color: white;
+    font-family: "Roboto Condensed";
+    width: 30em;
+    height: 5em;
+    padding: 3em 3em 0 3em;
+}
+
 #sun {
     position: absolute;
-    top: 30vh;
-    left: 30vh;
+    top: 28vh;
+    left: 23vh;
     background:yellow;
 
-    height: 15vh;
-    width: 15vh;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
 
     box-shadow: 0 0 40px red;
 }
 
 #skill1 {
-position: absolute;
-    top: 0;
-    left: 17.5vh;
+    position: absolute;
+    top: 5vh;
+    left: -1vh;
     background:#E34D26;
     border-radius:50%;
     height: 4vh;
     width: 4vh;
   
 }
+
 #skill1-orbit {
     position: absolute;
-    left: 25vh;
-    top: 25vh;
+    left: 18vh;
+    top: 23vh;
 
 
-    width: 25vh;
-    height: 25vh;
+    width: 20vh;
+    height: 20vh;
 
     border-width: 1px;
     border-style: solid;
@@ -172,14 +752,15 @@ position: absolute;
     margin-left: -1vh;
     margin-top: -1vh;
 }
+
 #skill2 {
 position: absolute;
     top: 0;
     left: 50%;
     background:#0170B9;
     border-radius:50%;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     margin-left: -2vh;
     margin-top: -2vh;
   
@@ -189,10 +770,10 @@ position: absolute;
     top: 50%;
     left: 50%;
 
-    width: 40vh;
-    height: 40vh;
-    margin-top: -20vh;
-    margin-left: -20vh;
+    width: 30vh;
+    height: 30vh;
+    margin-top: -15vh;
+    margin-left: -15vh;
 
     border-width: 1px;
     border-style: solid;
@@ -211,8 +792,8 @@ position: absolute;
     left: 50%;
     background:#D5B932;
     border-radius:50%;
-    height: 5vh;
-    width: 5vh;
+    height: 4vh;
+    width: 4vh;
     margin-left: -2vh;
     margin-top: -2vh;
   
@@ -222,10 +803,10 @@ position: absolute;
     top: 50%;
     left: 50%;
 
-    width: 56vh;
-    height: 56vh;
-    margin-top: -28vh;
-    margin-left: -28vh;
+    width: 40vh;
+    height: 40vh;
+    margin-top: -20vh;
+    margin-left: -20vh;
 
     border-width: 1px;
     border-style: solid;
@@ -233,9 +814,9 @@ position: absolute;
     border-radius:50%;
     
     
-    -webkit-animation: spin-right 22s linear infinite;
-    -moz-animation: spin-right 22s linear infinite;
-    animation: spin-right 22s linear infinite;
+    -webkit-animation: spin-right 40s linear infinite;
+    -moz-animation: spin-right 40s linear infinite;
+    animation: spin-right 40s linear infinite;
 }
 
 
@@ -256,10 +837,10 @@ position: absolute;
     top: 50%;
     left: 50%;
 
-    width: 68vh;
-    height: 68vh;
-    margin-top: -34vh;
-    margin-left: -34vh;
+    width: 52vh;
+    height: 52vh;
+    margin-top: -26vh;
+    margin-left: -26vh;
 
     border-width: 1px;
     border-style: solid;
@@ -267,9 +848,9 @@ position: absolute;
     border-radius:50%;
     
     
-    -webkit-animation: spin-right 14s linear infinite;
-    -moz-animation: spin-right 14s linear infinite;
-    animation: spin-right 14s linear infinite;
+    -webkit-animation: spin-right 64s linear infinite;
+    -moz-animation: spin-right 64s linear infinite;
+    animation: spin-right 64s linear infinite;
 }
 
 
@@ -291,18 +872,6 @@ position: absolute;
     }
 }
 
-.skills {
-    color: white;
-    float: left;
-    margin-top: 10vh;
-    width: 28vw;
-    height: 25vw;
-    padding: 2vh;
-    font-family: 'Roboto Condensed';
-    position: absolute;
-    z-index: 100;
-}
-
 #htmlLogo {
     background-image: url('../media/svg/HTML5.svg');
     width: 7vh;
@@ -311,14 +880,16 @@ position: absolute;
     background-size: cover;
     margin-bottom: 1em;
     float: left;
+    margin-top: 1vh;
 }
 
 #htmlText {
-    width: 18vw;
-    height: 8vh;
+    width: 40vw;
+    height: 4vh;
     margin-bottom: 1em;
     float: left;
     margin-left: 1em;
+    padding-top: 1em;
 }
 
 #cssLogo {
@@ -332,7 +903,7 @@ position: absolute;
 }
 
 #cssText {
-    width: 18vw;
+    width: 40vw;
     height: 8vh;
     margin-bottom: 1em;
     float: left;
@@ -350,7 +921,7 @@ position: absolute;
 }
 
 #javascriptText {
-    width: 18vw;
+    width: 40vw;
     height: 8vh;
     margin-bottom: 1em;
     float: left;
@@ -368,9 +939,13 @@ position: absolute;
 }
 
 #rwdText {
-    width: 18vw;
+    width: 40vw;
     height: 8vh;
     margin-bottom: 1em;
     float: left;
     margin-left: 1em;
+}
+
+.borderClass {
+    border: 1px solid yellow;
 }
